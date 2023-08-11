@@ -1,19 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -645,7 +629,7 @@ body {
 }
 
 .computers-card {
-  width: 400px; /* Adjust the card width as needed */
+  width: 275px; /* Adjust the card width as needed */
   background-color: var(--bg-oxford-blue-alpha-90);
   box-shadow: var(--shadow);
   overflow: hidden;
