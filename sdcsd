@@ -1,0 +1,20 @@
+
+<!-- Card 3 -->
+<li data-reveal="bottom">
+  <div class="computers-card">
+    <figure class="card-banner img-holder">
+      <img src="./assets/images/Forza.jpeg"
+        alt="Forza Horizon 5"
+        class="img-cover">
+    </figure>
+
+    <div class="card-content">
+      <a href="#" class="card-tag">Forza Horizon 5 </a>
+      <h3 class="h3">
+        <a href="#" class="card-title">Forza Horizon 5 with online PC game</a>
+      </h3>
+  Release Date: Sept 2022
+      <a href="#" class="link has-before">Play Now!</a>
+    </div>
+  </div>
+</li>
