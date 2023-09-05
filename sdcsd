@@ -1,20 +1,194 @@
+<?php include 'includes/header.php'; ?>
 
-<!-- Card 3 -->
-<li data-reveal="bottom">
-  <div class="computers-card">
-    <figure class="card-banner img-holder">
-      <img src="./assets/images/Forza.jpeg"
-        alt="Forza Horizon 5"
-        class="img-cover">
-    </figure>
+<main>
+    <article>
+        <div class="container">
+            <h2 class="h2 section-title" data-reveal="bottom">Gaming games</h2>
+            <p>Scroll left-right to view some of the games we have in stock.</p>
 
-    <div class="card-content">
-      <a href="#" class="card-tag">Forza Horizon 5 </a>
-      <h3 class="h3">
-        <a href="#" class="card-title">Forza Horizon 5 with online PC game</a>
-      </h3>
-  Release Date: Sept 2022
-      <a href="#" class="link has-before">Play Now!</a>
-    </div>
-  </div>
-</li>
+            <div class="scrollable-container">
+                <ul class="games-list">
+                    <?php
+                    // Include the igdb.php file
+                    include 'igdb.php';
+                    ?>
+                </ul>
+            </div>
+        </div>
+        <!-- Add other sections and content for the games page here -->
+    </article>
+</main>
+
+<?php include 'includes/footer.php'; ?>
+
+
+
+<main>
+    <section class="section games" aria-label="Games" id="games">
+        <div class="container">
+            <h2 class="h2 section-title" data-reveal="bottom">Games</h2>
+            <p class="section-text" data-reveal="bottom">
+            <h2>Recent PC Games</h2>
+            <p>Scroll left-right to view some of the latest games we have in stock.</p>
+            <div class="scrollable-container">
+                <!-- Wrap the game cards in a horizontal scrollable container -->
+                <div class="computers-list">
+
+                    <!-- Game Card 1 -->
+                    <div class="games-card" data-game-id="1">
+                        <img src="assets/images/fifa2.jpeg" alt="Game 1">
+                        <h3 class="card-title">Fifa 23</h3>
+                        <p class="card-description">A short description of Game 1 goes here.</p>
+                    </div>
+
+                    <!-- Game Card 2 -->
+                    <div class="games-card" data-game-id="2">
+                        <img src="assets/images/Cyberpunk.jpeg" alt="Game 2">
+                        <h3 class="card-title">Cyberpunk</h3>
+                        <p class="card-description">A short description of Game 2 goes here.</p>
+                    </div>
+
+                    <!-- Add more game cards as needed -->
+                </div>
+            </div>
+            </p>
+        </div>
+    </section>
+</main>
+
+
+</body>
+
+</html>
+
+
+/*-----------------------------------*\
+#computers
+\*-----------------------------------*/
+
+.computers-list {
+align-items: stretch;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+gap: 30px;
+display: inline-flex;
+padding-inline-start:
+20px;
+}
+
+.computers-card {
+
+background-color: var(--bg-oxford-blue-alpha-90);
+box-shadow: var(--shadow);
+max-width: 33.333%;
+padding: .75rem;
+margin-bottom: 2rem;
+border: 0;
+flex-basis: 33.333%;
+transition: 0.3s;
+width: 100%;
+flex-grow: 0;
+flex-shrink: 0;
+}
+.computers-card img {
+width: 100% ;
+height: auto;
+}
+
+
+.computers-card .card-content {
+position: relative;
+padding: 30px;
+}
+
+.card-tag {
+position: absolute;
+bottom: 100%;
+left: 0;
+background-image: var(--gradient-1);
+color: var(--text-white);
+font-size: var(--fontSize-8);
+font-weight: var(--weight-semiBold);
+text-transform: uppercase;
+height: 30px;
+line-height: 32px;
+padding-inline: 20px;
+clip-path: var(--clip-path-3);
+}
+
+.computers-card :is(.card-meta-list, .card-meta-item) {
+display: flex;
+align-items: center;
+}
+
+.computers-card .card-meta-list {
+flex-wrap: wrap;
+gap: 5px 10px;
+}
+
+.computers-card .card-meta-item {
+gap: 5px;
+}
+
+.computers-card .card-meta-item ion-icon {
+color: var(--text-purple);
+}
+
+.computers-card .card-meta-text,
+.computers-card .link {
+color: var(--text-champagne-pink);
+font-size: var(--fontSize-7);
+font-weight: var(--weight-bold);
+text-transform: uppercase;
+}
+
+.computers-card .h3 {
+margin-block: 15px 10px;
+}
+
+.computers-card .card-title {
+display: inline;
+background-image: linear-gradient(to left, var(--bg-purple), var(--bg-purple));
+background-repeat: no-repeat;
+background-position: left bottom;
+background-size: 0% 4px;
+
+transition: var(--transition-2);
+}
+
+.computers-card .card-title:is(:hover, :focus-visible) {
+background-size: 100% 4px;
+}
+
+.computers-card .link {
+max-width: max-content;
+margin-block-start: 15px;
+padding-inline-start: 30px;
+transition: var(--transition-1);
+}
+
+.computers-card .link::before {
+top: 50%;
+left: 0;
+transform: translateY(-100%);
+width: 20px;
+height: 4px;
+background-color: var(--bg-purple);
+}
+
+.computers-card .link:is(:hover, :focus-visible) {
+color: var(--text-purple);
+}
+
+.scrollable-container {
+
+overflow-x: auto;
+
+white-space: nowrap;
+
+padding:
+20px 0;
+}
