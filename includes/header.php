@@ -19,9 +19,9 @@
     <!-- 
         - favicon
       -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+      <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-    <!-- 
+      <!-- 
         - google font link
       -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,7 +70,7 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#product" class="navbar-link" data-nav-link>products</a>
+                        <a href="#products" class="navbar-link" data-nav-link>products</a>
                     </li>
 
                     <li class="navbar-item">
@@ -89,17 +89,18 @@
             </nav>
 
             <!-- Shopping Cart and Portal Links -->
-            <a href="#" class="social-link" data-btn>
+            <a href="#" class="social-link" data-btn style="display: flex; align-items: center;">
+    <i class="fas fa-shopping-cart" style="color: #9841ff; padding-right: 10px;"></i>
+    <span style="color: #9841ff;">Cart</span>
+</a>
 
-                <i class="fas fa-shopping-cart" style="color: #9841ff;"></i>
-                <span style="color: #9841ff;">Cart <span>
-            </a>
 
-
-            <div> <a href="#login" class="btn" data-btn>
-                    <i class="fas fa-door-open"></i>
-                    Portal
-                </a></div>
+            <div>
+    <a href="#login" class="btn" data-btn style="display: flex; align-items: center;">
+        <i class="fas fa-door-open" style="padding-right: 10px;"></i>
+        Portal
+    </a>
+</div>
 
             <!-- Navigation Toggle Button -->
 

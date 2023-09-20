@@ -13,44 +13,100 @@
 
 <body>
     <main>
-        <section class="section games" aria-label="Games" id="games">
-            <div class="container">
-                <h2 class="h2 section-title" data-reveal="bottom">Games</h2>
-                <p class="section-text" data-reveal="bottom">
-                <h2>Recent PC Games</h2>
-                <p>Scroll left-right to view some of the latest games we have in stock.</p>
-                <div class="scrollable-container">
-                    <div class="computers-list">
-                        <!-- Card 1 -->
-                        <div class="computers-card" data-game-id="1">
-                            <img src="assets/images/games-1.jpeg" alt="M-ATX">
-                            <h3 class="card-title">Cabinet Design M-ATX Gaming Tower Computer Casing With RGB Fans and
-                                LED strip</h3>
-                            <p class="card-description">A short description of Game 1 goes here.</p>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="computers-card" data-game-id="1">
-                            <img src="assets/images/games-2.jpeg" alt="MSI">
-                            <h3 class="card-title">MSI MPG GUNGNIR 110L_111R ARGB Gaming ATX Computer Casing strip</h3>
-                            <p class="card-description">A short description of Game 1 goes here.</p>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="computers-card" data-game-id="1">
-                            <img src="assets/images/Evesky.jpeg" alt="MSI">
-                            <h3 class="card-title">Evesky Gaming Mid Tower Computer Casing</h3>
-                            <p class="card-description">A short description of Game 1 goes here.</p>
-                        </div>
+        
+ <!-- Computers Section -->
+ <section class="section Computers" aria-label="Computers" id="Computers">
+  <div class="container">
 
-                        <!-- Add more cards here if needed -->
+    <h2 class="h2 section-title" data-reveal="bottom">
+      Computers</span>
+    </h2>
 
-                    </div>
+    <p class="section-text" data-reveal="bottom">
+    <h2>You can now shop directly from this website or visit our physical shop in Nairobi.</h2>
+    <p>Scroll left-right to view some of the latest Computers we have in stock.
+    </p>
+    <div class="scrollable-container">
+      <ul class="computers-list">
+        <!-- Card 1 -->
+        <li data-reveal="bottom">
+          <div class="computers-card">
+            <figure class="card-banner img-holder">
+              <img src="./assets/images/PROD 1.png" alt="Product 1" class="img-cover">
+            </figure>
 
-                    <!-- Add other sections and content for the games page here -->
-                </div>
+            <div class="card-content">
+              <a href="#" class="card-tag">Product 1</a>
+              <h3 class="h3">
+                <a href="#" class="card-title">Product 1</a>
+              </h3>
+              Ksh 250
+              <a href="#" class="link has-before">Buy Now!</a>
             </div>
-            </p>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li data-reveal="bottom">
+          <div class="computers-card">
+            <figure class="card-banner img-holder">
+              <img src="./assets/images/PROD 2.png" alt="Product 2" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <a href="#" class="card-tag">Product 2</a>
+              <h3 class="h3">
+                <a href="#" class="card-title">Product 2</a>
+              </h3>
+            Ksh 900
+              <a href="#" class="link has-before">Buy Now!</a>
             </div>
-        </section>
+          </div>
+        </li>
+        <!-- Card 3 -->
+        <li data-reveal="bottom">
+          <div class="computers-card">
+            <figure class="card-banner img-holder">
+              <img src="./assets/images/PROD 3.png" alt="Product 3" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <a href="#" class="card-tag">Product 2 </a>
+              <h3 class="h3">
+                <a href="#" class="card-title">Product 2 </a>
+              </h3>
+              Ksh 750
+              <a href="#" class="link has-before">Buy Now!</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 4 -->
+        <li data-reveal="bottom">
+          <div class="computers-card">
+            <figure class="card-banner img-holder">
+              <img src="./assets/images/PROD 4.png" alt="Product 4" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <a href="#" class="card-tag">Product 4 </a>
+              <h3 class="h3">
+                <a href="#" class="card-title">Product 4</a>
+              </h3>
+              Ksh 45O
+              <a href="#" class="link has-before">Buy Now!</a>
+            </div>
+          </div>
+        </li>
+
+
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
     </main>
 </body>
 

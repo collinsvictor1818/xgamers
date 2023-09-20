@@ -11,75 +11,98 @@
 
 <body>
     <main>
-        <section class="section games" aria-label="Games" id="games">
-            <div class="container">
-                <h2 class="h2 section-title" data-reveal="bottom">Games</h2>
-                <p class="section-text" data-reveal="bottom">
-                <h2>Recent PC Games</h2>
-                <p>Scroll left-right to view some of the latest games we have in stock.</p>
-                <div class="scrollable-container">
-                    <!-- Wrap the game cards in a horizontal scrollable container -->
-                    <div class="games-list">
+    <section class="section games" aria-label="Games" id="games">
+          <div class="container">
 
+            <h2 class="h2 section-title" data-reveal="bottom">
+              Games</span>
+            </h2>
 
-                        <!-- Game Card 2 -->
-                        <div class="games-card" data-game-id="1">
-                            <img src="assets/images/fifa2.jpeg" alt="Game 1">
-                            <h3 class="card-title">Fifa 23</h3>
-                            <p class="card-description">A short description of Game 1 goes here.</p>
-                        </div>
+            <p class="section-text" data-reveal="bottom">
+            <h2>Recent PC Games</h2>
+            <p>Scroll left-right to view some of the latest games we have in stock.
+            </p>
+            <div class="scrollable-container">
+              <ul class="computers-list">
+                <!-- Card 1 -->
+                <li data-reveal="bottom">
+                  <div class="computers-card">
+                    <figure class="card-banner img-holder">
+                      <img src="./assets/images/Fifa2.jpeg" alt="Fifa 23" class="img-cover">
+                    </figure>
 
-                        <!-- Game Card 1 -->
-                        <div class="games-card">
-                            <img src="assets/images/fifa2.jpeg" alt="Game 1">
-                            <h3 class="card-title">Fifa 23</h3>
-                            <p class="card-description">A short description of Game 1 goes here.</p>
-                        </div>
-                        <!-- Game Card 2 -->
-                        <div class="games-card">
-                            <img src="assets/images/Cyberpunk.jpeg" alt="Game 2">
-                            <h3 class="card-title">Cyberpunk</h3>
-                            <p class="card-description">A short description of Game 2 goes here.</p>
-                        </div>
-                        <!-- Game Card 1 -->
-
-
-
-                        <!-- Game Card 2 -->
-                        <div class="games-card">
-                            <img src="assets/images/Cyberpunk.jpeg" alt="Game 2">
-                            <h3 class="card-title">Cyberpunk</h3>
-                            <p class="card-description">A short description of Game 2 goes here.</p>
-                        </div>
-                        <!-- Game Card 1 -->
-                        <div class="games-card">
-                            <img src="assets/images/fifa2.jpeg" alt="Game 1">
-                            <h3 class="card-title">Fifa 23</h3>
-                            <p class="card-description">A short description of Game 1 goes here.</p>
-                        </div>
-
-                        <!-- Game Card 2 -->
-                        <div class="games-card">
-                            <img src="assets/images/Cyberpunk.jpeg" alt="Game 2">
-                            <h3 class="card-title">Cyberpunk</h3>
-                            <p class="card-description">A short description of Game 2 goes here.</p>
-                        </div>
-                        <!-- Game Card 1 -->
-                        <div class="games-card">
-                            <img src="assets/images/fifa2.jpeg" alt="Game 1">
-                            <h3 class="card-title">Fifa 23</h3>
-                            <p class="card-description">A short description of Game 1 goes here.</p>
-                        </div>
-
-
-
-
-                        <!-- Add more game cards as needed -->
+                    <div class="card-content">
+                      <a href="#" class="card-tag">Fifa 23</a>
+                      <h3 class="h3">
+                        <a href="#" class="card-title">Fifa 23 with online PC game</a>
+                      </h3>
+                      Release Date: Sept 2022
+                      <a href="#" class="link has-before">Play Now!</a>
                     </div>
-                </div>
-                </p>
+                  </div>
+                </li>
+
+                <!-- Card 2 -->
+                <li data-reveal="bottom">
+                  <div class="computers-card">
+                    <figure class="card-banner img-holder">
+                      <img src="./assets/images/Hitman.jpeg" alt="Hitman 3" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+                      <a href="#" class="card-tag">Hitman 3</a>
+                      <h3 class="h3">
+                        <a href="#" class="card-title">Hitman 3 with online PC game</a>
+                      </h3>
+                      Release Date: Jan 2021
+                      <a href="#" class="link has-before">Play Now!</a>
+                    </div>
+                  </div>
+                </li>
+                <!-- Card 3 -->
+                <li data-reveal="bottom">
+                  <div class="computers-card">
+                    <figure class="card-banner img-holder">
+                      <img src="./assets/images/Cyberpunk.jpeg" alt="CyberPunk 2077" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+                      <a href="#" class="card-tag">CyberPunk 2077 </a>
+                      <h3 class="h3">
+                        <a href="#" class="card-title">CyberPunk 2077 with online PC game</a>
+                      </h3>
+                      Release Date: Dec 2020
+                      <a href="#" class="link has-before">Play Now!</a>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Card 4 -->
+                <li data-reveal="bottom">
+                  <div class="computers-card">
+                    <figure class="card-banner img-holder">
+                      <img src="./assets/images/Forza.jpeg" alt="Forza Horizon 5" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+                      <a href="#" class="card-tag">Forza Horizon 5 </a>
+                      <h3 class="h3">
+                        <a href="#" class="card-title">Forza Horizon 5 with online PC game</a>
+                      </h3>
+                      Release Date: Nov 2021
+                      <a href="#" class="link has-before">Play Now!</a>
+                    </div>
+                  </div>
+                </li>
+
+
+              </ul>
             </div>
+
+          </div>
         </section>
+
+        
     </main>
     <script>
         $(document).ready(function () {
