@@ -15,7 +15,7 @@
     <main>
         
  <!-- Products Section -->
- <section class="section Products" aria-label="Products" id="Products">
+ <section class="section Products" aria-label="Products" id="products">
   <div class="container">
 
     <h2 class="h2 section-title" data-reveal="bottom">
