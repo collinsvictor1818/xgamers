@@ -15,7 +15,7 @@
     <main>
         
  <!-- Computers Section -->
- <section class="section Computers" aria-label="Computers" id="Computers">
+ <section class="section Computers" aria-label="Computers" id="computers">
   <div class="container">
 
     <h2 class="h2 section-title" data-reveal="bottom">
