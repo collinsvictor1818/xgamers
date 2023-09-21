@@ -13,7 +13,16 @@
 
 <body>
     <main>
-        
+    <script>
+        $(document).ready(function () {
+            // Add click event handler for "Build your PC Now!" links
+            $('.link.has-before').on('click', function (e) {
+                e.preventDefault();
+                // Redirect to games-list.php when the link is clicked
+                window.location.href = './pages/products-list.php';
+            });
+        });
+    </script>
  <!-- Products Section -->
  <section class="section Products" aria-label="Products" id="products">
   <div class="container">

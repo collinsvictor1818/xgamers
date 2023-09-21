@@ -69,7 +69,7 @@
            
 
             <!-- Shopping Cart and Portal Links -->
-            <a href="#" class="social-link" data-btn style="display: flex; align-items: center;">
+            <a href="../pages/cart.php" class="social-link" data-btn style="display: flex; align-items: center;">
     <i class="fas fa-shopping-cart" style="color: #9841ff; padding-right: 10px;"></i>
     <span style="color: #9841ff;">Cart</span>
 </a>

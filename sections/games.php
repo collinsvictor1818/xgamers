@@ -10,32 +10,14 @@
 </head>
 <script>
         $(document).ready(function () {
-            // Function to handle card clicks
-            function handleCardClick(event) {
-                // Get the game ID from the clicked card
-                const gameId = $(this).data('game-id');
-
-                // Check if gameId is valid (you can define your own validation logic here)
-                if (isValidGameId(gameId)) {
-                    // Navigate to details.php with the game ID as a query parameter
-                    window.location.href = `sections/details.php?gameId=${gameId}`;
-                } else {
-                    // Handle the case where the game ID is not valid (e.g., show an error message)
-                    alert('Invalid game ID');
-                }
-            }
-
-            // Add a click event listener to all game cards
-            $('.games-card').on('click', handleCardClick);
-
-            // Example function to validate game ID (customize as needed)
-            function isValidGameId(gameId) {
-                // Implement your validation logic here (e.g., check if it's a positive integer)
-                return !isNaN(gameId) && parseInt(gameId) > 0;
-            }
+            // Add click event handler for "Build your PC Now!" links
+            $('.link.has-before').on('click', function (e) {
+                e.preventDefault();
+                // Redirect to games-list.php when the link is clicked
+                window.location.href = './pages/games-list.php';
+            });
         });
     </script>
-
 <body>
     <main>
     <section class="section games" aria-label="Games" id="games">
