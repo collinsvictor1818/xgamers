@@ -94,14 +94,14 @@
     <span style="color: #9841ff;">Cart</span>
 </a>
 
-
+<!---
             <div>
     <a href="#login" class="btn" data-btn style="display: flex; align-items: center;">
         <i class="fas fa-door-open" style="padding-right: 10px;"></i>
         Portal
     </a>
 </div>
-
+--->
             <!-- Navigation Toggle Button -->
 
             <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>

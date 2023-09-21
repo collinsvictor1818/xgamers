@@ -8,6 +8,33 @@
     <!-- Include jQuery or your preferred library for AJAX requests -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+<script>
+        $(document).ready(function () {
+            // Function to handle card clicks
+            function handleCardClick(event) {
+                // Get the game ID from the clicked card
+                const gameId = $(this).data('game-id');
+
+                // Check if gameId is valid (you can define your own validation logic here)
+                if (isValidGameId(gameId)) {
+                    // Navigate to details.php with the game ID as a query parameter
+                    window.location.href = `sections/details.php?gameId=${gameId}`;
+                } else {
+                    // Handle the case where the game ID is not valid (e.g., show an error message)
+                    alert('Invalid game ID');
+                }
+            }
+
+            // Add a click event listener to all game cards
+            $('.games-card').on('click', handleCardClick);
+
+            // Example function to validate game ID (customize as needed)
+            function isValidGameId(gameId) {
+                // Implement your validation logic here (e.g., check if it's a positive integer)
+                return !isNaN(gameId) && parseInt(gameId) > 0;
+            }
+        });
+    </script>
 
 <body>
     <main>
@@ -36,7 +63,11 @@
                       <h3 class="h3">
                         <a href="#" class="card-title">Fifa 23 with online PC game</a>
                       </h3>
-                      Release Date: Sept 2022
+                      <div class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+</div>
                       <a href="#" class="link has-before">Play Now!</a>
                     </div>
                   </div>
@@ -54,7 +85,11 @@
                       <h3 class="h3">
                         <a href="#" class="card-title">Hitman 3 with online PC game</a>
                       </h3>
-                      Release Date: Jan 2021
+                      <div class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+</div>
                       <a href="#" class="link has-before">Play Now!</a>
                     </div>
                   </div>
@@ -71,7 +106,11 @@
                       <h3 class="h3">
                         <a href="#" class="card-title">CyberPunk 2077 with online PC game</a>
                       </h3>
-                      Release Date: Dec 2020
+                      <div class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+</div>
                       <a href="#" class="link has-before">Play Now!</a>
                     </div>
                   </div>
@@ -89,7 +128,11 @@
                       <h3 class="h3">
                         <a href="#" class="card-title">Forza Horizon 5 with online PC game</a>
                       </h3>
-                      Release Date: Nov 2021
+                      <div class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+</div>
                       <a href="#" class="link has-before">Play Now!</a>
                     </div>
                   </div>
@@ -104,34 +147,7 @@
 
         
     </main>
-    <script>
-        $(document).ready(function () {
-            // Function to handle card clicks
-            function handleCardClick(event) {
-                // Get the game ID from the clicked card
-                const gameId = $(this).data('game-id');
-
-                // Check if gameId is valid (you can define your own validation logic here)
-                if (isValidGameId(gameId)) {
-                    // Navigate to details.php with the game ID as a query parameter
-                    window.location.href = `sections/details.php?gameId=${gameId}`;
-                } else {
-                    // Handle the case where the game ID is not valid (e.g., show an error message)
-                    alert('Invalid game ID');
-                }
-            }
-
-            // Add a click event listener to all game cards
-            $('.games-card').on('click', handleCardClick);
-
-            // Example function to validate game ID (customize as needed)
-            function isValidGameId(gameId) {
-                // Implement your validation logic here (e.g., check if it's a positive integer)
-                return !isNaN(gameId) && parseInt(gameId) > 0;
-            }
-        });
-    </script>
-
+   
 
 </body>
 

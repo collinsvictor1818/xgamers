@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <!-- Include your CSS file -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Include jQuery or your preferred library for AJAX requests -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>

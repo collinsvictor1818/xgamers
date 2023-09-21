@@ -163,7 +163,6 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 body {
   background-color: var(--bg-dark-purple);
   background-image: url("../images/body-bg.jpg");
@@ -208,7 +207,7 @@ body {
 
 .has-before::before,
 .has-after::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
 }
 
@@ -499,124 +498,6 @@ body {
 
 
 /*-----------------------------------*\
-  #UPCOMING
-\*-----------------------------------*/
-
-.upcoming-item:not(:last-child) {
-  margin-block-end: 90px;
-}
-
-.upcoming-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.upcoming-card::before {
-  top: 50%;
-  background-image: var(--gradient-1);
-  transform: translateY(-50%);
-  width: 90%;
-  height: 80px;
-  z-index: -1;
-  opacity: 0.3;
-  border-radius: var(--radius-5);
-}
-
-.upcoming-card.left::before {
-  right: 0;
-  clip-path: var(--clip-path-4);
-}
-
-.upcoming-card.right::before {
-  left: 0;
-  clip-path: var(--clip-path-6);
-}
-
-.upcoming-card .card-title {
-  text-transform: uppercase;
-}
-
-.upcoming-card.left .card-title {
-  margin-inline-end: 50px;
-  text-align: right;
-}
-
-.upcoming-card.right .card-title {
-  margin-inline-start: 50px;
-  text-align: left;
-}
-
-.upcoming-card .card-meta {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: var(--gradient-1);
-  width: max-content;
-  padding: 6px 20px;
-  font-size: var(--fontSize-7);
-  font-weight: var(--weight-semiBold);
-  text-transform: uppercase;
-  border-radius: var(--radius-3);
-}
-
-.upcoming-card.left .card-meta {
-  clip-path: var(--clip-path-5);
-}
-
-.upcoming-card.right .card-meta {
-  clip-path: var(--clip-path-7);
-}
-
-.upcoming-card .card-banner {
-  width: 30%;
-}
-
-.upcoming-card.right .card-banner {
-  order: 1;
-}
-
-.upcoming-time {
-  margin-block: 50px 30px;
-}
-
-.upcoming-time :is(.time, .date) {
-  text-align: center;
-}
-
-.upcoming-time .time {
-  color: var(--text-white);
-  font-size: var(--fontSize-1);
-  font-weight: var(--weight-bold);
-  line-height: 1;
-}
-
-.upcoming-time .date {
-  font-size: var(--fontSize-7);
-  font-weight: var(--weight-semiBold);
-  margin-block: 5px;
-}
-
-.upcoming-item .social-wrapper {
-  justify-content: center;
-}
-
-.upcoming-item .social-link {
-  color: var(--text-white);
-  font-size: 2.5rem;
-  transition: var(--transition-1);
-}
-
-.upcoming-item .social-link:is(:hover, :focus-visible) {
-  color: var(--text-purple);
-}
-
-
-
-
-
-/*-----------------------------------*\
   #computers
 \*-----------------------------------*/
 
@@ -629,7 +510,7 @@ body {
 }
 
 .computers-card {
-  width: 275px; /* Adjust the card width as needed */
+  width: 350px; /* Adjust the card width as needed */
   background-color: var(--bg-oxford-blue-alpha-90);
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -639,6 +520,23 @@ body {
   position: relative;
   padding: 30px;
 }
+.computers-card .card-content-overlay {
+  inset: 0;
+  background-color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.computers-card .card-text {
+  overflow-wrap: break-word; /* This allows the text to break and wrap to the next line */
+  /* You can also set a max-width if needed to control the width of the container */
+  /* max-width: 300px; */
+}
+
 
 .card-tag {
   position: absolute;
@@ -717,6 +615,11 @@ body {
 
 .computers-card .link:is(:hover, :focus-visible) {
   color: var(--text-purple);
+}
+.card-text {
+  overflow-wrap: break-word; /* This allows the text to break and wrap to the next line */
+  /* You can also set a max-width if needed to control the width of the container */
+  /* max-width: 300px; */
 }
 
 .scrollable-container {
@@ -990,7 +893,10 @@ body {
     transform-origin: bottom;
     z-index: -1;
   }
-
+  .section-title .span {
+    display: inline;
+    color: var(--text-purple);
+}
 
 
   /**

@@ -1,0 +1,128 @@
+/* Container for the grid */
+.grid-container {
+    display: grid;
+    gap: 30px; /* Updated gap */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Updated card width */
+    padding-inline-start: 20px;
+}
+
+/* Style for each card */
+.grid-card {
+    width: 350px; /* Updated card width */
+    background-color: var(--bg-oxford-blue-alpha-90);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+/* Style for card content */
+.grid-card .card-content {
+    position: relative;
+    padding: 30px;
+}
+
+/* Style for card overlay */
+.grid-card .card-content-overlay {
+    inset: 0;
+    background-color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+/* Style for card text */
+.grid-card .card-text {
+    overflow-wrap: break-word;
+    /* You can set a max-width if needed */
+    /* max-width: 300px; */
+}
+
+/* Style for card tags (left-aligned) */
+.grid-card .card-tag {
+    position: absolute;
+    left: 0;
+    background-image: var(--gradient-1);
+    color: var(--text-white);
+    font-size: var(--fontSize-8);
+    font-weight: var(--weight-semiBold);
+    text-transform: uppercase;
+    height: 30px;
+    line-height: 32px;
+    padding-inline: 20px;
+    clip-path: var(--clip-path-3);
+}
+
+/* Style for card meta data (left-aligned) */
+.grid-card :is(.card-meta-list, .card-meta-item) {
+    display: flex;
+    align-items: center;
+}
+
+.grid-card .card-meta-list {
+    flex-wrap: wrap;
+    gap: 5px 10px;
+}
+
+.grid-card .card-meta-item {
+    gap: 5px;
+}
+
+.grid-card .card-meta-item ion-icon {
+    color: var(--text-purple);
+}
+
+.grid-card .card-meta-text{
+    color:  var(--text-purple);
+    font-size: var(--fontSize-7);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+}
+
+.grid-card .link {
+    max-width: max-content;
+    margin-block-start: 15px;
+    padding: 3px 15px; /* Updated padding for centering text */
+    transition: var(--transition-1);
+    background-color: var(--bg-purple); /* Updated background color */
+    color: var(--text-white); /* Updated text color */
+    text-align: center; /* Center the text horizontally */
+    text-decoration: none; /* Remove underline */
+    border-radius: 0; /* Remove border radius */
+}
+
+/* Style for card titles */
+.grid-card .card-title {
+    display: inline;
+    background-image: linear-gradient(to left, var(--bg-purple), var(--bg-purple));
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 4px;
+    transition: var(--transition-2);
+}
+
+.grid-card .card-title:is(:hover, :focus-visible) {
+    background-size: 100% 4px;
+}
+
+/* Style for "Play Now" button */
+.grid-card .link {
+    max-width: max-content;
+    margin-block-start: 15px;
+    padding-inline-start: 30px;
+    transition: var(--transition-1);
+}
+
+.grid-card .link::before {
+    top: 50%;
+    left: 0;
+    transform: translateY(-100%);
+    width: 20px;
+    height: 4px;
+    background-color: var(--bg-purple);
+}
+
+.grid-card .link:is(:hover, :focus-visible) {
+    color: var(--text-purple);
+}

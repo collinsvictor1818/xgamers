@@ -58,10 +58,7 @@
           <a href="#" class="footer-link">Help Center</a>
         </li>
 
-        <li>
-          <a href="#" class="footer-link">Privacy and Policy</a>
-        </li>
-
+  
         <li>
           <a href="#" class="footer-link">Terms of Use</a>
         </li>

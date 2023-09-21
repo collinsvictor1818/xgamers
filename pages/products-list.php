@@ -9,17 +9,7 @@
     <?php include 'includes/header.php'; ?>
     <main>
         <article>
-            <!-- Hero Section -->
-            <?php include 'includes/hero.php'; ?>
-
-            <!-- Computer Section -->
-            <?php include 'sections/computers.php'; ?>
-
-            <!-- Gaming Section -->
-            <?php include 'sections/games.php'; ?>
-
-            <!-- Products Section -->
-            <?php include 'sections/products.php'; ?>
+         
         </article>
     </main>
 
