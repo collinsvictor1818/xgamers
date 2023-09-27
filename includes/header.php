@@ -50,7 +50,7 @@
         <div class="container">
 
 
-            <a href="#login" class="logo">
+            <a href="./index.php" class="logo">
                 <img src="./assets/images/logo.svg" width="110" height="53" alt="unigine home">
             </a>
 

@@ -19,7 +19,7 @@
             $('.link.has-before').on('click', function (e) {
                 e.preventDefault();
                 // Redirect to games-list.php when the link is clicked
-                window.location.href = './pages/products-list.php';
+                window.location.href = './pages/games-list.php';
             });
         });
     </script>

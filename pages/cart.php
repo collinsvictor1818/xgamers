@@ -62,7 +62,7 @@
         <div class="container">
 
 
-            <a href="#login" class="logo">
+            <a href="#" class="logo">
                 <img src="../assets/images/logo.svg" width="110" height="53" alt="unigine home">
             </a>
 

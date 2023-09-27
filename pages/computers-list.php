@@ -94,7 +94,7 @@
             section class="section hero" aria-label="Hero" id="home">
             <div class="hero has-before" id="home">
                 <div class="container">
-                    <h1 class="h1 title hero-title">Gaming List</h1>
+                    <h1 class="h1 title hero-title">Computers List</h1>
                        <div class="hero-banner">
                         <img src="../assets/images/hero-banner.png" width="850" height="414" alt="hero banner" class="w-100">
                         <img src="../assets/images/hero-banner-bg.png" alt="" class="hero-banner-bg">
