@@ -6,25 +6,55 @@
 </head>
 <body id="top">
     <!-- Header -->
-    <?php include 'includes/header.php'; ?>
+    <?php 
+    $headerFile = 'includes/header.php';
+    if (file_exists($headerFile)) {
+        include $headerFile;
+    }
+    ?>
     <main>
         <article>
             <!-- Hero Section -->
-            <?php include 'includes/hero.php'; ?>
+            <?php 
+            $heroFile = 'includes/hero.php';
+            if (file_exists($heroFile)) {
+                include $heroFile;
+            }
+            ?>
 
             <!-- Computer Section -->
-            <?php include 'sections/computers.php'; ?>
+            <?php 
+            $computersFile = 'sections/computers.php';
+            if (file_exists($computersFile)) {
+                include $computersFile;
+            }
+            ?>
 
             <!-- Gaming Section -->
-            <?php include 'sections/games.php'; ?>
+            <?php 
+            $gamesFile = 'sections/games.php';
+            if (file_exists($gamesFile)) {
+                include $gamesFile;
+            }
+            ?>
 
             <!-- Products Section -->
-            <?php include 'sections/products.php'; ?>
+            <?php 
+            $productsFile = 'sections/products.php';
+            if (file_exists($productsFile)) {
+                include $productsFile;
+            }
+            ?>
         </article>
     </main>
 
     <!-- Footer -->
-    <?php include 'includes/footer.php'; ?>
+    <?php 
+    $footerFile = 'includes/footer.php';
+    if (file_exists($footerFile)) {
+        include $footerFile;
+    }
+    ?>
 
     <!-- Back to Top Button -->
     <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
